@@ -1,4 +1,4 @@
-.home .paragraph {
+ .paragraph {
   margin-top: 1.25rem;
 }
 
@@ -187,7 +187,7 @@
 .home .tile {
   flex: 1;
   margin-top: 0;
-  margin-bottom: 0.75rem;
+  margin-bottom: 0.25rem;
   min-width: 0;
   flex-basis: auto;
   width: 50%;
@@ -251,6 +251,7 @@
 
 .tutorials .container {
   min-height: 100%;
+  /*background: linear-gradient(to right, var(--color-brand-light-green) 0%, var(--color-brand-light-blue) 100%);*/
 }
 
 /* 1 column layout on small screens */
@@ -263,7 +264,7 @@
 /* 3 column layout on large screens */
 @media screen and (min-width: 769px) {
   .tutorials.body.tiles .sect1 {
-    flex-basis: calc(33% - 20px);
+    flex-basis: calc(33% - 40px);
   }
 }
 
@@ -274,6 +275,13 @@
   flex-direction: column;
   justify-content: space-between;
   padding: 0 0.9375rem;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.tutorials.body.tiles > .sectionbody > img {
+  display: flex;
 }
 
 /* target the tutorial title */
@@ -286,7 +294,6 @@ mark {
 }
 
 .tutorials.body.tiles .sect1 {
-  border: 1px solid var(--color-brand-silver);
   margin: 0 0 1.25rem 0;
   /* override property defined in .body.tiles .sect1 */
   padding-right: 0;
@@ -309,8 +316,8 @@ mark {
   height: 100%;
 }
 
-.tutorials.body.tiles .links + .sect3 {
-  margin-bottom: 1.25rem;
+.tutorials.body.tiles .sect3 {
+  margin-bottom: 0;
 }
 
 /* fix the height. some titles span over 2 lines */
@@ -323,37 +330,22 @@ mark {
   height: 100%;
 }
 
-/* use flexbox to lay out the additional links */
-.tutorials.body.tiles .links p {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-/* each link takes 1/3 of the card width */
-.tutorials.body.tiles .links p a {
-  flex-basis: 33%;
-  margin: 10px 0;
-  text-align: center;
-}
-
-/* because `justify-self: flex-end` is being ignored in modern browsers */
-/* https://stackoverflow.com/a/49658476/1908348 */
-.tutorials.body.tiles .sect4:last-child {
-  margin-top: auto;
-}
-
 .tutorials.body.tiles .sect1.developer > h2 {
-  background-color: #00b0dc;
+  /*background-color: linear-gradient(to right, var(--color-brand-light-green) 0%, var(--color-brand-light-blue) 100%);*/
+  background-color: #ffffff;
 }
 
 .tutorials.body.tiles .sect1.architect > h2 {
-  background-color: #00bdbd;
+  background-color: #fffff;
 }
 
 .tutorials.body.tiles .sect1.devops > h2 {
-  background-color: #ff983a;
+  /*background-color: linear-gradient(to right, var(--color-brand-light-green) 0%, var(--color-brand-light-blue) 100%);*/
+  background-color: #ffffff;
 }
 
+.tutorials.body.tiles .img {
+}
 /* layout tutorial languages and components */
 .tutorials.body.tiles .sect3 {
   display: flex;
@@ -383,19 +375,6 @@ mark {
   margin-top: 0.5rem;
 }
 
-.tutorials.body.tiles .sect4 {
-  display: flex;
-  height: 9.563rem;
-  padding: 0.625rem;
-  text-align: center;
-}
-
-.tutorials.body.tiles .sect4 .ulist ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
 .tutorials.body.tiles .sect5 {
   margin: 5px 0;
   width: 50%;
@@ -407,7 +386,7 @@ mark {
 }
 
 .tutorials .banner {
-  background: linear-gradient(to right, var(--color-brand-purple) 0%, var(--color-brand-light-blue) 100%);
+  background: linear-gradient(to right, var(--color-brand-light-green) 0%, var(--color-brand-light-blue) 100%);
   color: white;
   height: calc(440px - var(--height-navbar));
 }
@@ -416,7 +395,7 @@ mark {
   font-size: 2.375rem;
   margin: 0;
   padding: 0;
-  text-transform: uppercase;
+  text-align: center;
 }
 
 .tutorials .banner h2 {
@@ -424,6 +403,7 @@ mark {
   font-size: 1.75rem;
   margin: 0;
   padding: 14px 0 17px 0;
+  text-align: center;
 }
 
 .tutorials .banner-content {
