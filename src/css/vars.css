@@ -6,11 +6,11 @@
   --color-brand-red-tint: #fcdedf;
   --color-brand-white: #fff;
   /* secondary */
-  --color-brand-light-blue: #00ace0;
+  --color-brand-light-blue: #1c81a0;
   --color-brand-light-blue-tint: #d9f3fb;
   --color-brand-pink: #eb4971;
   --color-brand-green: #6eba91;
-  --color-brand-light-green: #96d6b4;
+  --color-brand-light-green: #92b25e;
   --color-brand-purple: #b36cdb;
   --color-brand-purple-tint: #f4e9fa;
   /* tertiary */
@@ -22,7 +22,7 @@
   --color-brand-orange: #fc9c0c;
   --color-brand-orange-tint: #fff0da;
   --color-muted: var(--color-brand-gray);
-  --color-text: #333;
+  --color-text: #fff;
   --color-link: var(--color-brand-light-blue);
   --color-code: var(--color-brand-pink);
   --color-border: var(--color-brand-silver);

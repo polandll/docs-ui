@@ -86,12 +86,6 @@ const bundleTask = createTask({
   call: series(bundleBuildTask, bundlePackTask),
 })
 
-const packTask = createTask({
-  name: 'pack',
-  desc: '(deprecated; use bundle instead)',
-  call: series(bundleTask),
-})
-
 const releasePublishTask = createTask({
   name: 'release:publish',
   call: task.release(buildDir, bundleName, owner, repo, process.env.GITHUB_API_TOKEN, true),
@@ -135,6 +129,5 @@ module.exports = exportTasks(
   bundlePackTask,
   releaseTask,
   previewTask,
-  previewBuildTask,
-  packTask
+  previewBuildTask
 )

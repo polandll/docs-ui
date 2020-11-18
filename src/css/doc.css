@@ -37,7 +37,6 @@
   display: block;
   max-width: 5.75rem;
   height: 0;
-  outline: 0.5px solid currentColor;
   margin-top: 1.0625rem;
 }
 
@@ -401,7 +400,7 @@
 
 .doc .imageblock img {
   display: block;
-   margin-left: auto;
+  margin-left: auto;
   margin-right: auto;
   width: 30%;
 }

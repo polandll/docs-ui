@@ -9,14 +9,9 @@ html {
   text-size-adjust: 100%;
 }
 
-html,
-body {
-  height: 100%;
-}
-
 body {
   color: var(--color-text);
-  font-family: "Red Hat Display", sans-serif;
+  font-family: "Open Sans", sans-serif;
   line-height: 1.5;
   margin: 0;
 }
